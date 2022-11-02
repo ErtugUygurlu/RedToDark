@@ -15,16 +15,12 @@ public class Game_Manager : MonoBehaviour
 
     private int levelindex;
 
-
-
-
     void Start()
     {
         isstart = false;
         levelindex = SceneManager.GetActiveScene().buildIndex;
     }
 
-    // Update is called once per frame
     void Update()
     {
         for (int i = 0; i < star_count; i++)

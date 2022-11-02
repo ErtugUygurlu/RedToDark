@@ -8,11 +8,8 @@ public class cubuk_kontrol : MonoBehaviour
     float hiz = 10.0f;
     float yatay_ok;
 
-
-
     private void FixedUpdate()
     {
-
         oyuncu_hareketi();
     }
 
