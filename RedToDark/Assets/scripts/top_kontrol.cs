@@ -8,10 +8,7 @@ public class top_kontrol : MonoBehaviour
     Vector3 baslangic_koordinatlari;
     float hiz = 7.0f;
     [SerializeField] private Game_Manager game_manager;
-
     public GameObject oyunbitti;
-
-
 
     void Start()
     {
@@ -38,10 +35,6 @@ public class top_kontrol : MonoBehaviour
         {
             top_rigi.velocity = new Vector3(hiz, 0, top_rigi.velocity.z);
         }
-
-
-
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -56,16 +49,11 @@ public class top_kontrol : MonoBehaviour
         {
             oyunbitti.SetActive(true);
             Time.timeScale = 0f;
-
-
-
-
         }
+
         if (other.gameObject.tag == "geberdin")
         {
             game_manager.GameOver();
         }
-
     }
-
 }
